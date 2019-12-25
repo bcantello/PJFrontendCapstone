@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700,900&display=swap');
+
+button {
+    color: #fff;
+    background: #ff4081;
+    border: 1px #DADADA solid;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);;
+    outline: none;
+}
+
+button:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    color: #fff;
+    background: #f23b8b;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 1px #DFDFDF;
+}
+
+.mainButton {
+    top: 50px;
+    position: relative;
+    float: right;
+    margin-right: 1%;
+    height: 36px;
+}
+
+.chargeButton {
+    top: 10px;
+    margin: 2% 1% 2% 0;
+    height: 36px;
+}
+
+.cancelButton {
+    top: 10px;
+    background-color: rgba(158,158,158,.2);
+    height: 36px;
+    color: #000;
+}
+
+.cancelButton:hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    color: #000;
+    background: rgba(126, 126, 126, 0.2);
+}
+
+.transButton {
+    text-align: right;
+}
+
+.clear-fix {
+    clear: right;
+}
+
+.transButton a {
+    text-decoration: none;
+}
+
+form {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    border: 1px solid rgba(0,0,0,.12);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width: 97%;
+    margin: 35px 1% 1%;
+    padding: .5%;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    background-color: white;
+}
+
+::placeholder {
+    color: lightgrey;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid white;
+    border-bottom: 2px solid #3f51b5;
+}
+
+.errorMessage {
+    width: 45%;
+    color: red;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0.5%;
+    background-color: white;
+}
+
+.fieldMonth{
+    float: left;
+    width: 48%;
+    margin: 0 0.75%;
+}
+
+.fieldYear{
+    float: right;
+    width: 48%;
+    margin: 0 0.75%;
+}
+
+.fieldhalf {
+    width: 100%;
+    color: red;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0.5%;
+    background-color: white;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}

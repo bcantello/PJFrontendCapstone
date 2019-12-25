@@ -1,0 +1,30 @@
+<main class="transaction-list">
+    <page-header text="Recent transactions"></page-header>
+    <approval-response></approval-response>
+    <div>
+        <a ui-sref="transactionForm">
+            <button type="button" class="mainButton">NEW TRANSACTION</button>
+            <div class="clear-fix"></div>
+        </a>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th><input type="checkbox"></th>
+            <th>Status</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="transaction in $ctrl.tableData.transactions">
+            <td><input type="checkbox"></td>
+            <td>{{transaction.status | uppercase}}</td>
+            <td>{{transaction.name | capitalize}}</td>
+            <td>{{transaction.amount | currency}}</td>
+            <td>{{transaction.created | date : 'MM/dd/yyyy HH:mm'}}</td>
+        </tr>
+        </tbody>
+    </table>
+</main>

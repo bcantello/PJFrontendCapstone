@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Capstone</title>
+</head>
+<body>
+<header>
+    <h1 class="Title">
+        New Transaction
+    </h1>
+</header>
+<div class="container">
+    <div class="form-messages"></div>
+    <form id="transactionForm">
+        <div class="field">
+            <input type="text" id="amount" name="transactionamount" placeholder="$ Amount">
+            <div class="errorMessage" id="amount-error"></div>
+        </div>
+
+        <div class="field">
+            <input type="text" id="name" name="cardname" placeholder="Name">
+            <div class="errorMessage" id="name-error"></div>
+        </div>
+
+        <div class="field">
+            <input type="text" id="cardNumber" name="cardnumber" placeholder="Card Number">
+            <div class="errorMessage" id="cardNumber-error"></div>
+        </div>
+
+        <div class="fieldHalf">
+            <div class="fieldMonth">
+                <input type="text" id="cardExpMonth" name="expmonth" placeholder="MM">
+                <div class="errorMessage" id="cardExpMonth-error"></div>
+            </div>
+
+            <div class="fieldYear">
+                <input type="text" id="cardExpYear" name="expyear" placeholder="YY">
+                <div class="errorMessage" id="cardExpYear-error"></div>
+            </div>
+        </div>
+
+        <div class="field">
+            <input type="text" id="cardCvv" name="cvv" placeholder="CVV">
+            <div class="errorMessage" id="cardCvv-error"></div>
+        </div>
+
+        <div class="transButton">
+            <a href="index.html"><button class="cancelButton" type="button">CANCEL</button></a>
+            <button id="chargebutton" class="chargeButton" type="submit" >CHARGE</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="./chargeCard.js"></script>
+</div>
+</body>
+</html>

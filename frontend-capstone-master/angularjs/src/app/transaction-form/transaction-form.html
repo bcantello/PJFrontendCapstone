@@ -1,0 +1,80 @@
+<main class="transaction-form">
+    <page-header text="New transactions"></page-header>
+    <form id="transactionForm">
+        <div class="field">
+            <input
+                    name="amount"
+                    type="text"
+                    id="amount"
+                    placeholder="$ Amount"
+                    ng-model="$ctrl.user.amount">
+            <span class="errorMessage" id="amount-error">{{ $ctrl.error.amount[0] }}</span>
+        </div>
+
+        <div class="field">
+            <input
+                    name="cardname"
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                    ng-model="$ctrl.user.cardname">
+            <span class="errorMessage" id="name-error">{{ $ctrl.error.name[0] }}</span>
+        </div>
+
+        <div class="field">
+            <input
+                    name="cardnumber"
+                    type="text"
+                    id="cardNumber"
+                    placeholder="Card Number"
+                    ng-model="$ctrl.user.cardnumber">
+            <span class="errorMessage" id="cardNumber-error">{{ $ctrl.error.cardNumber[0] }}</span>
+        </div>
+
+        <div class="fieldHalf">
+            <div class="fieldMonth">
+                <input
+                        name="expmonth"
+                        type="text"
+                        id="cardExpMonth"
+                        placeholder="MM"
+                        ng-model="$ctrl.user.expmonth">
+                <span class="errorMessage" id="cardExpMonth-error">{{ $ctrl.error.cardExpMonth[0] }}</span>
+            </div>
+
+            <div class="fieldYear">
+                <input
+                        name="expyear"
+                        type="text"
+                        id="cardExpYear"
+                        placeholder="YY"
+                        ng-model="$ctrl.user.expyear">
+                <span class="errorMessage" id="cardExpYear-error">{{ $ctrl.error.cardExpYear[0] }}</span>
+            </div>
+        </div>
+
+        <div class="field">
+            <input
+                    name="cvv"
+                    type="text"
+                    id="cardCvv"
+                    placeholder="CVV"
+                    ng-model="$ctrl.user.cvv">
+            <span class="errorMessage" id="cardCvv-error">{{ $ctrl.error.cardCvv[0] }}</span>
+        </div>
+
+        <div class="transButton">
+            <a ui-sref="recentTransactions">
+                <button
+                        id="cancelbutton"
+                        class="cancelButton"
+                        type="button">CANCEL</button>
+            </a>
+            <button
+                    id="chargebutton"
+                    class="chargeButton"
+                    type="submit"
+                    ng-click="$ctrl.processTransaction()">CHARGE</button>
+        </div>
+    </form>
+</main>
